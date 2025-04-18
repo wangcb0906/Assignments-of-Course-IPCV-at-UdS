@@ -2,10 +2,12 @@
 
 This is the repo for the assignments of course Image Processing and Computer Vision in 25SS at Saarland University
 
-Group member:
-(dictionary order)
+Group member (alphabetical order):
+
 Chongbiao Wang
+
 Ishika
+
 Ipek Günaltay 
 
 
