@@ -522,9 +522,16 @@ long    i, j;        /* loop variables */
 for (i=1;i<=nx;i++)
   for (j=1;j<=ny;j++)
       {
-      /*
-        SUPPLEMENT CODE HERE
-      */
+      /* 
+        (      (       (                            (
+         Y      0        0.2990   0.5870  0.1140      R 
+         Cb  =  0,5  +   -0.1687  -0.3313 0.5000      G
+         Cr     0,5      0.5000   -0.4187 -0.0813     B
+      )             )                             )     )
+      */  
+      u_YCbCr[0][i][j] =  .2990 * u_RGB[0][i][j] +  .5870 * u_RGB[1][i][j] +  .1140 * u_RGB[2][i][j];
+      u_YCbCr[1][i][j] = -.1687 * u_RGB[0][i][j] + -.3313 * u_RGB[1][i][j] +  .5000 * u_RGB[2][i][j] + 127.5;
+      u_YCbCr[2][i][j] =  .5000 * u_RGB[0][i][j] + -.4187 * u_RGB[1][i][j] + -.0813 * u_RGB[2][i][j] + 127.5;
       }
 
 return;

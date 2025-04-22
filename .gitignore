@@ -5,7 +5,7 @@
 
 # ignore executable file in this project
 quantisation
-
+YCbCr
 # ignore log file
 *.log.txt
 
