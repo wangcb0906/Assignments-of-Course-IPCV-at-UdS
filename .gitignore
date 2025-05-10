@@ -6,6 +6,9 @@
 # ignore executable file in this project
 quantisation
 YCbCr
+DFT
+dct
+pointtrans
 # ignore log file
 *.log.txt
 
