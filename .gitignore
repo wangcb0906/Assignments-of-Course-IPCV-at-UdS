@@ -2,6 +2,7 @@
 .DS_Store
 .AppleDouble
 .LSOverride
+.vscode
 
 # ignore executable file in this project
 quantisation
